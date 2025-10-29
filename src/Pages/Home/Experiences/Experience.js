@@ -54,9 +54,9 @@ export default function Experience({Experience_ref}) {
           {timeline_data.map((elem) => {
             let isWorkIcon = elem.icon === "work";
             let showButton =
-              elem.buttonText != undefined &&
-              elem.buttonText != null &&
-              elem.buttonText != "";
+              elem.buttonText !== undefined &&
+              elem.buttonText !== null &&
+              elem.buttonText !== "";
             return (
               <VerticalTimelineElement
                 className="sub_element"
@@ -80,7 +80,9 @@ export default function Experience({Experience_ref}) {
                   {elem.title}
                 </h5>
 
-                <p id="description">{elem.description}</p>
+                <p id="description">{elem.description1}</p>
+                <p id="description">{elem.description2}</p>
+                <p id="description">{elem.description3}</p>
                 
               </VerticalTimelineElement>
             );

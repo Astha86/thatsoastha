@@ -33,7 +33,7 @@ function Landing({Landing_ref}) {
             Hello, <br/>I'm Astha Sahani
           </p>
           <p>
-          A <b>Full Stack Developer</b> with limitless ambition who is committed to transforming cool ideas into effective solutions that brings out real change.&nbsp;&nbsp;
+          A <b>Full Stack Engineer</b> with limitless ambition who is committed to transforming cool ideas into effective solutions that brings out real change.&nbsp;&nbsp;
             
           </p>
           

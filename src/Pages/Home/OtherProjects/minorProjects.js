@@ -5,7 +5,7 @@ import TicTac from "../../../Assets/Images/TicTac.png";
 import Razorpay from "../../../Assets/Images/Razorpay.png";
 import Gif from "../../../Assets/Images/Gif.png";
 import Bharat from "../../../Assets/Images/BharatTour.png";
-import Weather from "../../../Assets/Images/Weather.png";
+import Weather from "../../../Assets/Images/weather.png";
 import PasswordGenerator from '../../../Assets/Images/PasswordGenerator.png';
 import MinorProjectTem from "../../../Components/MinorProjectTem/MinorProjectTem";
 import Aos from "aos";
