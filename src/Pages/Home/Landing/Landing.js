@@ -40,7 +40,7 @@ function Landing({Landing_ref}) {
           <span className={styles.resumeBtn}>
             <a
               style={{ textDecoration: "none", color: "white" }}
-              href="https://drive.google.com/file/d/1DxI3Ft7OK3pYpV9_nygxPVjWEdTVL_3x/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VSE9eVmZ5PU5fo2BSaWjBBMstM2qdn21/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

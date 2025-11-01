@@ -75,15 +75,29 @@ export default function Experience({Experience_ref}) {
 
                 <h5
                   className="vertical-timeline-element-subtitle"
-                  style={{fontFamily: "Gilroy-semibold"}}
+                  // style={{fontFamily: "Gilroy-semibold"}}
                 >
-                  {elem.title}
+                  <a
+                    href={elem.companyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="company-link"
+                  >
+                    {elem.title}
+                  </a>
                 </h5>
 
                 <p id="description">{elem.description1}</p>
                 <p id="description">{elem.description2}</p>
                 <p id="description">{elem.description3}</p>
-                
+
+                {elem.techStack && (
+                  <div className="tech-stack">
+                    <strong>Tech Stack:</strong>{" "}
+                    {elem.techStack.join(", ")}
+                  </div>
+                )}
+
               </VerticalTimelineElement>
             );
           })}

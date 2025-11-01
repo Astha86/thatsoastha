@@ -46,10 +46,10 @@ function Home() {
 
       />
       <Landing Landing_ref={Landing_ref}/>
+      <Experience Experience_ref={Experience_ref}/>
       <Project Project_ref={Project_ref} />
       <MinorProjects />
       <Skills Skills_ref={Skills_ref}/>
-      <Experience Experience_ref={Experience_ref}/>
       <Footer onClickLanding={ScrollToLanding} Profile_ref={Profile_ref}/>
       <BackToTop/>
     </>
