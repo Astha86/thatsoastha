@@ -63,7 +63,25 @@ export default function Experience({Experience_ref}) {
                 key={elem.id} // key props for uniquely identify the card
                 date={elem.date} // date props because we want to show date on the other side of the card
                 dateClassName="date" // because we want to style the date
-                icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
+                icon={
+                  elem.logo ? (
+                    <img
+                      src={elem.logo}
+                      alt={`${elem.title} logo`}
+                      style={{
+                        borderRadius: "50%",
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        backgroundColor: "#fff"
+                      }}
+                    />
+                  ) : isWorkIcon ? (
+                    <WorkIcon />
+                  ) : (
+                    <SchoolIcon />
+                  )
+                }
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               >
                 <h3
@@ -77,14 +95,18 @@ export default function Experience({Experience_ref}) {
                   className="vertical-timeline-element-subtitle"
                   // style={{fontFamily: "Gilroy-semibold"}}
                 >
-                  <a
-                    href={elem.companyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="company-link"
-                  >
-                    {elem.title}
-                  </a>
+                  {elem.companyUrl ? (
+                    <a
+                      href={elem.companyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="company-link"
+                    >
+                      {elem.title}
+                    </a>
+                  ) : (
+                    <span className="company-link">{elem.title}</span>
+                  )}
                 </h5>
 
                 <p id="description">{elem.description1}</p>
