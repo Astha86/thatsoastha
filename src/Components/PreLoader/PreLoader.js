@@ -28,7 +28,7 @@ const PreLoader = () => {
         count = count + 1;
         console.log(count);
       }
-      if (count == words.length - 1) {
+      if (count === words.length - 1) {
         setIsFinished(true);
       }
     }, 380);
@@ -40,7 +40,7 @@ const PreLoader = () => {
 
   useEffect(() => {
     if (isFinished) {
-      const loaderOff = setTimeout(() => {
+      setTimeout(() => {
         setIsActive(false);
       }, 500);
     }

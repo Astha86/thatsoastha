@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Navbar.module.css";
 import logo from '../../Assets/Images/main.png'
 import { MenuOutlined, CloseOutlined} from "@ant-design/icons";

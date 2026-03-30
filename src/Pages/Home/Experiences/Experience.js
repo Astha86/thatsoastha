@@ -53,10 +53,6 @@ export default function Experience({Experience_ref}) {
         <VerticalTimeline>
           {timeline_data.map((elem) => {
             let isWorkIcon = elem.icon === "work";
-            let showButton =
-              elem.buttonText !== undefined &&
-              elem.buttonText !== null &&
-              elem.buttonText !== "";
             return (
               <VerticalTimelineElement
                 className="sub_element"
