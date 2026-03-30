@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import styles from "./Project.module.css";
-import CodeBuddy from "../../../Assets/Images/Codebuddy.png";
+// import CodeBuddy from "../../../Assets/Images/Codebuddy.png";
 import Ping from "../../../Assets/Images/Ping.png";
 import Mart from "../../../Assets/Images/Shopmart.png";
 import Techie from "../../../Assets/Images/techie.png";
