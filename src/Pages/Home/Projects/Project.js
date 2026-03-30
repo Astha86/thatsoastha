@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import styles from "./Project.module.css";
 import CodeBuddy from "../../../Assets/Images/Codebuddy.png";
+import Ping from "../../../Assets/Images/Ping.png";
 import Mart from "../../../Assets/Images/Shopmart.png";
 import Techie from "../../../Assets/Images/techie.png";
 import Nexora from "../../../Assets/Images/Nexora.png";
@@ -26,7 +27,7 @@ export default function Project({Project_ref}) {
             <p>My Work .</p>
           </div>
 
-        <div className={styles.Project}>
+        {/* <div className={styles.Project}>
           <ProjectTem
             title="CodeBuddy"
             smallDesc="An EdTech Platform to learn Coding"
@@ -39,6 +40,23 @@ export default function Project({Project_ref}) {
             skill5="ExpressJs"
             link="https://github.com/Astha86/CodeBuddy-An-EdTech-Platform"
             image={CodeBuddy}
+          />
+        </div> */}
+
+        <div className={styles.Project}>
+          <ProjectTem
+            title="Ping"
+            smallDesc="A high-performance real-time chat application with microservices architecture."
+            longDesc="Ping is a full-stack real-time messaging platform designed with a Microservices Architecture to ensure high performance and seamless scalability. Unlike monolithic applications, Ping separates its core business logic into specialized services, allowing for a modular and fault-tolerant communication ecosystem."
+            skill1="Next.js"
+            skill2="TypeScript"
+            skill3="Redis"
+            skill4="Socket.IO"
+            skill5="Node.js"
+            skill6="MongoDB"
+            skill7="RabbitMQ"
+            link="https://github.com/Astha86/PING-A-messaging-platform"
+            image={Ping}
           />
         </div>
 

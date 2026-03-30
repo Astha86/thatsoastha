@@ -12,9 +12,15 @@ import Express from "../../../Assets/Images/express.png";
 import Docker from "../../../Assets/Images/docker.png";
 import Postman from "../../../Assets/Images/postman.webp";
 import Mongo from "../../../Assets/Images/mongo.png";
+import Golang from "../../../Assets/Images/golang.png";
 
 import Cpp from "../../../Assets/Images/cpp.webp";
 import Git from "../../../Assets/Images/git.png";
+import NextJs from "../../../Assets/Images/nextjs.png";
+import TypeScript from "../../../Assets/Images/typescript.svg";
+import SocketIo from "../../../Assets/Images/socketio.png";
+import RabbitMQ from "../../../Assets/Images/rabbitmq.png";
+import Redis from "../../../Assets/Images/redis.png";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -53,6 +59,8 @@ export default function Skills({Skills_ref}) {
             <img src={Tailwind} alt="frontend" title="Tailwind" />
             <img src={Html} alt="frontend"  title="HTML"/>
             <img src={Css} alt="frontend" title="CSS"/>
+            <img src={NextJs} alt="frontend" title="Next.js"/>
+            <img src={TypeScript} alt="frontend" title="TypeScript"/>
           </div>
         </div>
 
@@ -69,6 +77,8 @@ export default function Skills({Skills_ref}) {
             <img src={Express} alt="backend techs" title="Express"/>
             <img src={Postman} alt="backend techs" title="Postman"/>
             <img src={Docker} alt="backend techs" title="Docker"/>
+            <img src={SocketIo} alt="backend techs" title="Socket.io"/>
+            <img src={RabbitMQ} alt="backend techs" title="RabbitMQ"/>
           </div>
         </div>
 
@@ -82,6 +92,7 @@ export default function Skills({Skills_ref}) {
           <h4 className={styles.stacks}>Databases :</h4>
           <div className={styles.logoImages}>
             <img src={Mongo} alt="backend techs" title="Mongo Db"/>
+            <img src={Redis} alt="backend techs" title="Redis"/>
           </div>
         </div>
 
@@ -96,6 +107,7 @@ export default function Skills({Skills_ref}) {
           <div className={styles.logoImages}>
             <img src={Cpp} alt="Other skills techs" title="C++" />
             <img src={Javascript} alt="language" title="JavaScript"/>
+            <img src={Golang} alt="Other skills techs" title="Go" />
             <img src={Git} alt="git logo" title="Git" />
 
           </div>

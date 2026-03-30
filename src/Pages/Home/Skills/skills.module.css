@@ -50,7 +50,12 @@
 .logoImages img{
     width:80px;
     height:80px;
+    border-radius: 18px;
+    background-color: #ece7e1;
+    background-image: url("../../../Assets/Images/topo_pattern.svg");
     background-size: cover;
+    padding: 12px;
+    object-fit: contain;
 }
 
 
@@ -88,6 +93,8 @@
     .logoImages img{
         width:60px;
         height:60px;
+        border-radius: 14px;
+        padding: 8px;
     }
     
 }

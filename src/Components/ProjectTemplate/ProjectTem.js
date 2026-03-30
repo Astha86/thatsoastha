@@ -26,9 +26,12 @@ export default function ProjectTem(props) {
           <Label title={props.skill1} />
           <Label title={props.skill2} />
           <Label title={props.skill3} />
-          {props.skill4 ? <Label title={props.skill4}/> : null}
-          {props.skill5 ? <Label title={props.skill5}/> : null}
-
+          {props.skill4 ? <Label title={props.skill4} /> : null}
+          {props.skill5 ? <Label title={props.skill5} /> : null}
+          {props.skill6 ? <Label title={props.skill6} /> : null}
+          {props.skill7 ? <Label title={props.skill7} /> : null}
+          {props.skill8 ? <Label title={props.skill8} /> : null}
+          {props.skill9 ? <Label title={props.skill9} /> : null}
         </div>
 
         <div className={styles.link}>
@@ -40,7 +43,9 @@ export default function ProjectTem(props) {
       </div>
 
       <div className={styles.Right}>
-        <img src={props.image} alt={props.title}/>
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+          <img src={props.image} alt={props.title} />
+        </a>
       </div>
     </div>
   );
