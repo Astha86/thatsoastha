@@ -55,7 +55,7 @@ export default function Project({Project_ref}) {
             skill5="Node.js"
             skill6="MongoDB"
             skill7="RabbitMQ"
-            link="https://github.com/Astha86/PING-A-messaging-platform"
+            link="https://pinglive.vercel.app/"
             image={Ping}
           />
         </div>
