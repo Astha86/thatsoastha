@@ -53,6 +53,7 @@ export default function Experience({Experience_ref}) {
         <VerticalTimeline>
           {timeline_data.map((elem) => {
             let isWorkIcon = elem.icon === "work";
+            let isActive = elem.active || (elem.date && elem.date.toLowerCase().includes("present"));
             return (
               <VerticalTimelineElement
                 className="sub_element"
@@ -80,12 +81,20 @@ export default function Experience({Experience_ref}) {
                 }
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               >
-                <h3
-                  className="vertical-timeline-element-title"
-                  style={{fontFamily: "Gilroy-bold"}}
-                >
-                  {elem.role}
-                </h3>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                  <h3
+                    className="vertical-timeline-element-title"
+                    style={{ fontFamily: "Gilroy-bold", margin: 0 }}
+                  >
+                    {elem.role}
+                  </h3>
+                  {isActive && (
+                    <span className="active-cursor-anim" title="Active">
+                      <span className="active-cursor-dot" />
+                      <span className="active-cursor-ring" />
+                    </span>
+                  )}
+                </div>
 
                 <h5
                   className="vertical-timeline-element-subtitle"
@@ -105,11 +114,11 @@ export default function Experience({Experience_ref}) {
                   )}
                 </h5>
 
-                <p id="description">{elem.description1}</p>
-                <p id="description">{elem.description2}</p>
-                <p id="description">{elem.description3}</p>
+                {elem.description1 && <p id="description">{elem.description1}</p>}
+                {elem.description2 && <p id="description">{elem.description2}</p>}
+                {elem.description3 && <p id="description">{elem.description3}</p>}
 
-                {elem.techStack && (
+                {elem.techStack && elem.techStack.length > 0 && (
                   <div className="tech-stack">
                     <strong>Tech Stack:</strong>{" "}
                     {elem.techStack.join(", ")}
