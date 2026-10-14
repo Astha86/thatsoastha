@@ -55,9 +55,9 @@ description2:
     role: "Solution Developer Intern",
     title: "Innovya Technologies",
     description1:
-      "Contributing to software solution development and supporting technical implementation within the Professional Services team.",
+      "Just getting started! 🚀 Will update soon : )",
     description2:
-      "Collaborating with the team to understand requirements, explore technical approaches, and support solution delivery.",
+      "",
     description3: "",
     techStack: [],
     buttonText: "View",
